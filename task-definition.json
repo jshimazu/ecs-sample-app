@@ -1,6 +1,6 @@
 {
     "ipcMode": null,
-    "executionRoleArn": "arn:aws:iam::727268352420:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::132268842438:role/ecsTaskExecutionRole",
     "containerDefinitions": [
       {
         "dnsSearchDomains": null,
@@ -14,7 +14,7 @@
             "awslogs-stream-prefix": "ecs"
           }
         },
-        "entryPoint": null,
+        "entryPoint": [],
         "portMappings": [
           {
             "hostPort": 80,
@@ -22,7 +22,7 @@
             "containerPort": 80
           }
         ],
-        "command": null,
+        "command": [],
         "linuxParameters": null,
         "cpu": 0,
         "environment": [],
@@ -31,22 +31,13 @@
         "dnsServers": null,
         "mountPoints": [],
         "workingDirectory": null,
-        "secrets": [
-          {
-            "valueFrom": "ecs-sample-app-aws-key",
-            "name": "AWS_ACCESS_KEY"
-          },
-          {
-            "valueFrom": "ecs-sample-app-aws-secret",
-            "name": "AWS_SECRET_ACCESS_KEY"
-          }
-        ],
+        "secrets": null,
         "dockerSecurityOptions": null,
         "memory": null,
         "memoryReservation": null,
         "volumesFrom": [],
         "stopTimeout": null,
-        "image": "727268352420.dkr.ecr.ap-northeast-1.amazonaws.com/sample:latest",
+        "image": "132268842438.dkr.ecr.ap-northeast-1.amazonaws.com/ecs-sample-app:fdc958ed016b9514ac8add8477734f2956bdd3a0",
         "startTimeout": null,
         "firelensConfiguration": null,
         "dependsOn": null,
@@ -54,7 +45,7 @@
         "interactive": null,
         "healthCheck": null,
         "essential": true,
-        "links": null,
+        "links": [],
         "hostname": null,
         "extraHosts": null,
         "pseudoTerminal": null,
@@ -67,13 +58,13 @@
       }
     ],
     "placementConstraints": [],
-    "memory": "1024",
-    "taskRoleArn": "arn:aws:iam::727268352420:role/ecsTaskExecutionRole",
+    "memory": "512",
+    "taskRoleArn": null,
     "compatibilities": [
       "EC2",
       "FARGATE"
     ],
-    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:727268352420:task-definition/ecs-sample-app-task-definition:19",
+    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:132268842438:task-definition/ecs-sample-app-task-definition:1",
     "family": "ecs-sample-app-task-definition",
     "requiresAttributes": [
       {
@@ -104,19 +95,7 @@
         "targetId": null,
         "targetType": null,
         "value": null,
-        "name": "com.amazonaws.ecs.capability.task-iam-role"
-      },
-      {
-        "targetId": null,
-        "targetType": null,
-        "value": null,
         "name": "ecs.capability.execution-role-ecr-pull"
-      },
-      {
-        "targetId": null,
-        "targetType": null,
-        "value": null,
-        "name": "ecs.capability.secrets.ssm.environment-variables"
       },
       {
         "targetId": null,
@@ -136,11 +115,10 @@
       "FARGATE"
     ],
     "networkMode": "awsvpc",
-    "cpu": "512",
-    "revision": 19,
+    "cpu": "256",
+    "revision": 1,
     "status": "ACTIVE",
     "inferenceAccelerators": null,
     "proxyConfiguration": null,
     "volumes": []
   }
-  
