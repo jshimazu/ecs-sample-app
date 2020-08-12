@@ -5,6 +5,7 @@
   "author": "jshimazu <jshimazu0820@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "aws-sdk": "^2.732.0",
     "express": "^4.17.1"
   }
 }
