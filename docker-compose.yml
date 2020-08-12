@@ -1,0 +1,8 @@
+version: '3'
+services:
+  api-server:
+    build:
+      context: .
+    restart: always
+    ports:
+      - ${DOCKER_API_PORT:-3000}:80
