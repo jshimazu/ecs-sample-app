@@ -33,11 +33,11 @@
         "workingDirectory": null,
         "secrets": [
           {
-            "valueFrom": "aws-key",
+            "valueFrom": "ecs-sample-app-aws-key",
             "name": "AWS_ACCESS_KEY"
           },
           {
-            "valueFrom": "aws-secret",
+            "valueFrom": "ecs-sample-app-aws-secret",
             "name": "AWS_SECRET_ACCESS_KEY"
           }
         ],
