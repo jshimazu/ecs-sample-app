@@ -4,7 +4,13 @@ const app = express()
 const port = 80 
 
 app.get('/', (req, res) => {
+  console.log('OK');
   res.send('OK')
+})
+
+app.get('/error', (req, res) => {
+  console.error('error');
+  throw new Error('error');
 })
 
 app.listen(port, () => {
