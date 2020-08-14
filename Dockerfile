@@ -7,4 +7,4 @@ RUN yarn
 COPY . .
 ENV APP_PORT 80
 EXPOSE 80
-CMD [ "node", "app.js" ]
+CMD [ "yarn", "start" ]

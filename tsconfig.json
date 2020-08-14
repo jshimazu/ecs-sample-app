@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "lib": ["esnext", "esnext.asynciterable", "dom"],
+        "esModuleInterop": true,
+        "strictPropertyInitialization": false,
+        "emitDecoratorMetadata": true,
+        "allowJs": true,
+        "sourceMap": true,
+        "strict": true,
+        "noEmit": true,
+        "baseUrl": ".",
+        "typeRoots": ["src/types", "node_modules/@types"]
+    },
+    "exclude": ["node_modules"],
+    "include": ["src/**/*"]
+}
+  

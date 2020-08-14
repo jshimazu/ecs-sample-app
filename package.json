@@ -5,7 +5,24 @@
   "author": "jshimazu <jshimazu0820@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/body-parser": "^1.19.0",
+    "@types/express": "^4.17.7",
+    "@types/multer": "^1.4.3",
     "aws-sdk": "^2.732.0",
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "class-transformer": "^0.3.1",
+    "class-validator": "^0.12.2",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "reflect-metadata": "^0.1.13",
+    "routing-controllers": "^0.9.0-alpha.6",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.57",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "start": "ts-node app.ts",
+    "dev": "ts-node-dev app.ts"
   }
 }
