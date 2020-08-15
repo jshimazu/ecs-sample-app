@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import * as AWS from 'aws-sdk';
+import AWS from 'aws-sdk';
 import "reflect-metadata"; // this shim is required
 import { createExpressServer } from "routing-controllers";
 import { AppController } from "./AppController";
